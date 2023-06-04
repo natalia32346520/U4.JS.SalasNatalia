@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        alert ("Prueba transportes");
+    </script>
+</head>
+
+<body>
+    <script>
+        function determinarMedioTransporte(distancia) {
+    if (distancia <= 1000) {
+    return "pie";
+  } else if (distancia <= 10000) {
+    return "bicicleta";
+  } else if (distancia <= 30000) {
+    return "colectivo";
+  } else if (distancia <= 100000) {
+    return "auto";
+  } else {
+    return "avión";
+  } 
+        }
+
+        var distancia = 15000;
+        var medioTransporte = determinarMedioTransporte(distancia);
+        console.log("El medio de transporte apropiado es: " + medioTransporte);
+    </script>
+    
+</body>
+</html>
